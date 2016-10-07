@@ -1,0 +1,39 @@
+{ "height":4,
+ "layers":[
+        {
+         "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1],
+         "height":4,
+         "name":"Calque de Tile 1",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":5,
+         "x":0,
+         "y":0
+        }],
+ "orientation":"orthogonal",
+ "properties":
+    {
+
+    },
+ "tileheight":210,
+ "tilesets":[
+        {
+         "firstgid":1,
+         "image":"moutain.png",
+         "imageheight":210,
+         "imagewidth":862,
+         "margin":0,
+         "name":"moutain",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tileheight":210,
+         "tilewidth":862
+        }],
+ "tilewidth":862,
+ "version":1,
+ "width":5
+}

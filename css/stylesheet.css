@@ -1,0 +1,209 @@
+html {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+}
+body {
+    background: #e8e8e8;
+    margin: 0;
+    min-height: 880px;
+}
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+}
+.main {
+    width: 100%;
+    margin-left: auto;
+    height: 100%;
+    min-height:700px;
+    padding-top: 0px;
+    margin-right: auto;
+    background: url('../img/fond2.png') repeat-x bottom;
+    background-size: cover;
+}
+.main>h1{
+    font-weight: bold;
+    text-align:center;
+    color:white;
+    font-size:24px;
+    padding-top: 10px;
+}
+#thinke{
+    text-align: center;
+    width: 245px;
+    color: white;
+    font-style: italic;
+    margin: auto;
+    font-family: 'Varela', sans-serif;
+    font-size: 13px;
+    background: #555;
+}
+.titt {
+    font-family: arial;
+    color: white;
+    font-weight: bold;        
+    font-size: 30px;
+}
+.popup {
+    height: 31px;
+    font-family: arial;
+    color: #333;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+}
+.popup input{
+    border-radius: 5px;
+    height: 33px;
+    font-size: 0.8em;
+    margin-bottom: 0px;
+}
+.sending {
+    width: 225px;
+    border-radius: 5px;
+    margin-top: 5px;
+    background: #333;
+    border-top: 1px solid #CCC;
+    border-left: 1px solid #CCC;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+    color: white;
+}
+.sending:hover {
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+}
+.tabl{
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.35)), color-stop(100%,rgba(0,0,0,0)));
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0) 100%);
+    background: -o-linear-gradient(top, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0) 100%);
+    background: -ms-linear-gradient(top, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59000000', endColorstr='#00000000',GradientType=0 );
+    width:800px;
+    margin:auto;
+    text-align:center;
+    line-height:20px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;		
+}
+.rdflt{
+    width: 200px;
+    height: 200px;
+    box-shadow: 10px 10px 0px #bbb,
+                20px 20px 0px #bbb,
+                30px 30px 0px #bbb,
+                40px 40px 0px #bbb;
+    border-radius: 100%;
+    margin: -200px auto 0px auto;
+}
+.footer {
+    width: 380px;
+    text-align: center;
+    margin: auto;
+}
+#loG {
+    height: 83px;
+    width: 350px;
+    text-align: center;
+    left: 50%;
+    margin: auto;
+}
+#sub{
+    min-height: 880px;
+    height: 100%;
+    margin:auto;
+    padding-top:20px;
+    background: url(../img/trait.jpg) repeat-x 0px 2px;
+    text-align:center;
+}
+
+.left-t {
+    height: 1px;
+    background-color: #272426;
+    margin-top: -10px;
+    position: relative;
+    float: left;
+    margin-left: 56px;
+    width: 60px;
+}
+.right-t {
+    height: 1px;
+    background-color: #272426;
+    margin-top: -10px;
+    position: relative;
+    float: right;
+    margin-right: 56px;
+    width: 60px;
+}
+.rota{
+    cursor:pointer;
+    width:200px;
+    height:200px;
+    border-radius:100%;
+    margin: auto;
+    padding-top: 0.1px;
+    color:white;
+    font-size:1.6em;
+    line-height: 15px;
+    /* Firefox */
+    -moz-transition: all 1s ease;
+    /* WebKit */
+    -webkit-transition: all 1s ease;
+    /* Opera */
+    -o-transition: all 1s ease;
+    /* Standard */
+    transition: all 1s ease;
+    text-align: center;
+}
+.rota:hover{
+    transform: rotate(30deg);
+    -ms-transform: rotate(30deg); 
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    background: #aaa !important;
+}
+#xclose{
+    position: absolute;
+    border-radius: 100%;
+    color: #333;
+    background: white;
+    width: 34px;
+    left: 50%;
+    margin-left: 107px;
+    top: 98px;
+    cursor: pointer;
+    border: 2px solid white;
+    -moz-transition: all 0.3s ease;
+    /* WebKit */
+    -webkit-transition: all 0.3s ease;
+    /* Opera */
+    -o-transition: all 0.3s ease;
+    /* Standard */
+    transition: all 0.3s ease;
+}
+#msgpop{
+    box-shadow: 0 0 140px 130px rgba(255,255,255,0.5);
+    padding-top: 22px;
+    height: 250px;
+    position: absolute;
+    top:114px;
+    left: 50%;
+    margin-left: -125px;
+    width:250px;
+    border:3px solid white;
+    background:#333;
+    color:white
+}
+#xclose:hover{
+    color: white;
+    background: #333;
+}

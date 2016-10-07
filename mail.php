@@ -1,0 +1,1 @@
+<?php$from = $_REQUEST['mail']; $message = $_REQUEST['msg']."			".$from; $subject = "New msg from portofolio"; $header = "De: <".$from.">" ."\r\n";$send = mail("geekorlife@gmail.com", $subject, $message, $header); if(!$send){ 	echo "error";	die(); } else {	echo "300";	die();}?>

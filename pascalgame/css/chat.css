@@ -1,0 +1,150 @@
+#page-wrap {
+    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background: url("wood.jpg") repeat scroll 0 0 transparent;
+}
+#col {
+    color: white;
+    font-family: 'Skranji';
+    font-size: 22px;
+    text-shadow: -1px -2px 1px rgba(0, 0, 0, 0.5);
+}
+.butchat.leftbut {
+    height:25px;
+    width:40%;
+    max-width: 130px;
+    float:left;
+}
+.butchat {
+   text-decoration: none;
+    font: 19px/1em 'Droid Sans', sans-serif;
+    font-weight: bold;
+    text-shadow: rgba(255, 255, 255, .5) 0 1px 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    padding: .5em .6em .4em .6em;
+    margin: .5em;
+    display: inline-block;
+    position: relative;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: #508217 !important;
+background-color: #9EE052;
+-webkit-box-shadow: inset rgba(255, 254, 255, 0.6) 0 0.3em .3em, inset rgba(0, 0, 0, 0.15) 0 -0.1em .3em, /* inner shadow */ #6BAD1F 0 .1em 3px, #508217 0 .3em 1px, /* color border */ rgba(0, 0, 0, 0.2) 0 .5em 5px;
+-moz-box-shadow: inset rgba(255,254,255,0.6) 0 0.3em .3em, inset rgba(0,0,0,0.15) 0 -0.1em .3em, /* inner shadow */ hsl(88, 70%, 40%) 0 .1em 3px, hsl(88, 70%, 30%) 0 .3em 1px, /* color border */ rgba(0,0,0,0.2) 0 .5em 5px;
+box-shadow: inset rgba(255, 254, 255, 0.6) 0 0.3em .3em, inset rgba(0, 0, 0, 0.15) 0 -0.1em .3em, /* inner shadow */ #6BAD1F 0 .1em 3px, #508217 0 .3em 1px, /* color border */ rgba(0, 0, 0, 0.2) 0 .5em 5px;
+background-image: -webkit-gradient(radial, 50% 0, 100, 50% 0, 0, from( rgba(255, 255, 255, 0) ), to( rgba(255, 255, 255, 0.7) )), url(noise.png);
+background-image: -moz-radial-gradient(top, ellipse cover, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%), url(noise.png);
+background-image: gradient(radial, 50% 0, 100, 50% 0, 0, from( rgba(255, 255, 255, 0) ), to( rgba(255, 255, 255, 0.7) )), url(noise.png);
+-webkit-transition: background .2s ease-in-out;
+}
+.subchat {
+    text-decoration: none;
+    font: 20px/1em 'Droid Sans', sans-serif;
+    font-weight: bold;
+    text-shadow: rgba(255, 255, 255, .5) 0 1px 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    padding: .5em .6em .4em .6em;
+    margin: .5em;
+    display: inline-block;
+    position: relative;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: #336999 !important;
+    background-color: #80C4FF;
+    -webkit-box-shadow: inset rgba(255, 254, 255, 0.6) 0 0.3em .3em, inset rgba(0, 0, 0, 0.15) 0 -0.1em .3em, /* inner shadow */ #5390C6 0 .1em 3px, #336999 0 .3em 1px, /* color border */ rgba(0, 0, 0, 0.2) 0 .5em 5px;
+    -moz-box-shadow: inset rgba(255,254,255,0.6) 0 0.3em .3em, inset rgba(0,0,0,0.15) 0 -0.1em .3em, /* inner shadow */ hsl(208, 50%, 55%) 0 .1em 3px, hsl(208, 50%, 40%) 0 .3em 1px, /* color border */ rgba(0,0,0,0.2) 0 .5em 5px;
+    box-shadow: inset rgba(255, 254, 255, 0.6) 0 0.3em .3em, inset rgba(0, 0, 0, 0.15) 0 -0.1em .3em, /* inner shadow */ #5390C6 0 .1em 3px, #336999 0 .3em 1px, /* color border */ rgba(0, 0, 0, 0.2) 0 .5em 5px;
+}
+.subchat:hover {
+    margin: .6em .5em .5em .5em;
+    -webkit-box-shadow: inset rgba(255, 254, 255, 0.6) 0 0.3em .3em, inset rgba(0, 0, 0, 0.15) 0 -0.1em .3em, /* inner shadow */ #5390C6 0 .1em 3px, #336999 0 .2em 1px, /* color border */ rgba(0, 0, 0, 0.2) 0 .4em 5px;
+    -moz-box-shadow: inset rgba(255,254,255,0.6) 0 0.3em .3em, inset rgba(0,0,0,0.15) 0 -0.1em .3em, /* inner shadow */ hsl(208, 50%, 55%) 0 .1em 3px, hsl(208, 50%, 40%) 0 .2em 1px, /* color border */ rgba(0,0,0,0.2) 0 .4em 5px;
+    box-shadow: inset rgba(255, 254, 255, 0.6) 0 0.3em .3em, inset rgba(0, 0, 0, 0.15) 0 -0.1em .3em, /* inner shadow */ #5390C6 0 .1em 3px, #336999 0 .2em 1px, /* color border */ rgba(0, 0, 0, 0.2) 0 .4em 5px;
+   
+}
+.butchat.rightbut {
+    height:25px;
+    float:right;
+    width:40%;
+    max-width: 130px;
+}
+#chatDiv {
+    position: absolute;
+    width: 100%;
+    top: 0; 
+    height: 100%;
+}
+#chat-wrap {
+    margin: 10px 0 5px 0;
+}
+#chat-area {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.32);
+    border-color: rgba(0, 0, 0, 0.36) rgba(255, 255, 255, 0.02) rgba(255, 255, 255, 0.11) rgba(0, 0, 0, 0.36);
+    border-image: none;
+    border-radius: 5px 5px 5px 5px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.56) inset;
+    height: 90px;
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow: auto;
+    padding: 3px;
+    overflow: hidden;
+}
+#chat-area span {
+    color: white;
+    background: #333;
+    padding: 4px 8px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 8px;
+    margin: 0 5px 0 0;
+}
+#chat-area p {
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+    font-size:0.9em;
+}
+#name-area {
+    position: absolute;
+    top: 12px;
+    right: 0;
+    color: white;
+    font: bold 12px "Lucida Grande", Sans-Serif;
+    text-align: right;
+}   
+#name-area span {
+    color: #fa9f00;
+}
+#send-message-area p {
+    float: left;
+    color: white;
+    padding-top: 3px;
+    font-size: 14px;
+}
+#sendie {
+    border: 2px solid rgba(0, 0, 0, 0.36);
+    border-radius: 5px 5px 5px 5px;
+    font: 12px "Lucida Grande",Sans-Serif;
+    height: 20px;
+    padding: 10px;
+    width: 90%;
+}
