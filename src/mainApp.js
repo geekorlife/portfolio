@@ -15,12 +15,6 @@ injectTapEventPlugin();
 
 require('./style/home.scss');
 
-let maxW = window.innerWidth < 300 ? (window.innerWidth*0.9) : 300;
-
-let ps = {
-    top: (window.innerHeight - maxW)+'px'
-};
-
 let innerH = window.innerHeight;
 
 const imgP = isMobile.any() ? {
@@ -49,6 +43,19 @@ class mainApp extends React.Component{
             noDisplay: false,
             openDrawer: false
         }
+        this.actions = [
+            <FlatButton
+                label="Close"
+                primary={true}
+                keyboardFocused={true}
+                onTouchTap={this.handleClose}
+            />
+        ];
+        this.iconMn = (
+            <svg style={{width:'24px',height:'24px', margin:'5px 25px 0px 5px'}} viewBox="0 0 24 24">
+                <path fill="#000000" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+            </svg>
+        );
     }
 
     componentDidMount(){
@@ -104,20 +111,6 @@ class mainApp extends React.Component{
         window.open(link);
     }
     render(){
-        
-        const actions = [
-            <FlatButton
-                label="Close"
-                primary={true}
-                keyboardFocused={true}
-                onTouchTap={this.handleClose}
-            />
-        ];
-        const iconMn = (
-            <svg style={{width:'24px',height:'24px', margin:'5px 25px 0px 5px'}} viewBox="0 0 24 24">
-                        <path fill="#000000" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
-                    </svg>
-        )
         return(
             <div>
                 <Nav 
@@ -200,7 +193,7 @@ class mainApp extends React.Component{
                         title="Menu"
                         style={{height:'50px', backgroundColor:'white',color:'black'} }
                         titleStyle={{color:'black', marginTop:'-7px'}}
-                        iconElementLeft={iconMn}
+                        iconElementLeft={this.iconMn}
                         onLeftIconButtonTouchTap={(e) => {this.openDrawer(e)}}
                     />
                         <ul className="mobileMenu">
@@ -238,7 +231,7 @@ class mainApp extends React.Component{
                 </Drawer>
                 <Dialog
                     title={this.state.title}
-                    actions={actions}
+                    actions={this.actions}
                     modal={false}
                     open={this.state.open}
                     onRequestClose={this.handleClose}
