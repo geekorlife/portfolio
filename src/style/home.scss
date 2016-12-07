@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+body{ 
+  background:radial-gradient(200% 100% at bottom center,#F7F7B6,#E96F92,#75517D,#1B2947); 
+  background:radial-gradient(220% 105% at top center,#1B2947 10%,#75517D 40%,#E96F92 65%,#F7F7B6); 
+  background-attachment:fixed; 
+  font-family: 'Roboto', sans-serif;
+  -webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+}
+.relative{
+    position: relative;
+    z-index: 5;
+}
+.main {
+    width: 100%;
+    h1{
+        font-size: 3em;
+        width: 200px;
+        color: white;
+        margin: auto;
+        text-transform: uppercase;
+        text-align: left;
+    }
+    p{
+        font-weight: 100;
+    }
+    .row{
+        width: 80%;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .img-pascal{
+        width: 300px;
+        max-width: 90%;
+        position: absolute;
+        left: 10%;
+    }
+}
+.one{
+    background: url('/img/back.jpg') no-repeat;
+    background-size: cover;
+}
+.two{
+    min-height: 100%;
+    height: 100%;
+    padding-top: 70px;
+    h1{
+        text-align: center;
+        width: auto;
+        font-weight: 100;
+        font-size: 2.5em;
+    }
+    p{
+        text-align: center;
+        a{
+            color: white;
+        }
+    }
+}
+
+.backGrd{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background: url('/public/img/back.png') no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+.box {
+    height: 200px;
+    color: #fff;
+    margin: 10px;
+}
+
+.col{
+    margin-top: 20px;
+    img{
+        margin-top: 15px;
+    }
+}
+
+.diaglog{
+    margin-top: -20px;
+    font-size: 0.9em;
+    h4{
+        color:#333;
+    }
+}
+.titleModal{
+    img{
+        width: 30px;
+        margin-top: -5px;
+        margin-right: 5px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .main {
+        .img-pascal{
+            width: 300px;
+            max-width: 50%;
+            position: absolute;
+            bottom: 0px;
+            transform: translateX(-50%);
+            left: 50%;
+        }
+    }
+    .mobileMenu{
+        list-style: none;
+        padding-left: 0;
+        li{
+            height: 50px;
+            background: rgba(0,0,0,0.2);
+            margin-bottom: 1px;
+            color: white;
+            .menuTitle{
+                margin-top: -22px;
+                margin-left: 30%;
+            }
+        }
+    }
+}
