@@ -113,6 +113,20 @@ const resumeData = [
             </div>
         ),
         img: "/img/email.jpg"
+    },
+    {
+        title: 'Save my skils',
+        link: 'http://www.geekorlife.com',
+        data: (
+            <div className="diaglog" style={{textAlign:'center'}}>
+                <br/><br/>
+                <iframe 
+                    style={{width:'670px', height:'352px', border:'none'}} 
+                    src="http://www.geekorlife.com/pascalgame"
+                >
+                </iframe>
+            </div>
+        )
     }
 ];
 

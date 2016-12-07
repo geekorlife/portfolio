@@ -57,6 +57,16 @@ backface-visibility: hidden;
             color: white;
         }
     }
+    .noDisplay{
+        display: none;
+    };
+    .playGame{
+        color: white;
+        cursor: pointer;
+    };
+    .playGame:hover{
+        text-decoration: underline;
+    }
 }
 
 .backGrd{

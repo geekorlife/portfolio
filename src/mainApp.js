@@ -16,18 +16,25 @@ injectTapEventPlugin();
 require('./style/home.scss');
 
 let maxW = window.innerWidth < 300 ? (window.innerWidth*0.9) : 300;
+
 let ps = {
     top: (window.innerHeight - maxW)+'px'
 };
+
 let innerH = window.innerHeight;
+
 const imgP = isMobile.any() ? {
     top: innerH-(window.innerWidth/2)
 } : {bottom: 0};
+
+const playStyle = isMobile.any() ? 'noDisplay' : 'playGame';
+
 const stylesList = {
     width: '24px',
     height: '24px',
     margin: '13px 10px 0px 20px'
-}
+};
+
 class mainApp extends React.Component{
     constructor(){
         super();
@@ -183,6 +190,7 @@ class mainApp extends React.Component{
                             open={(e) => this.openDialog(2)}
                         />
                         <p><a href="/resume.pdf">Download my PDF resume here</a></p>
+                        <p><span className={playStyle} onClick={(e) => this.openDialog(4)}>Play a game with me</span></p>
                     </div>
                     
                 </div>
